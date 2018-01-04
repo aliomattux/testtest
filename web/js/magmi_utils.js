@@ -3,8 +3,8 @@ var magmi_multifield=function(listfield,dyncontainer,linetpl,vlist)
 	this.vlist=vlist;
 	this.listfield=listfield;
 	this.dyncontainer=dyncontainer;
-	this.linetpl=linetpl
-	
+	this.linetpl=linetpl;
+
 	this.getinputline=function(fieldname,dvalue,linetpl)
 	{
 		linetpl=linetpl.replace('{fieldname}',fieldname).replace('{value}',dvalue).replace('{fieldname.enc}',encodeURIComponent(fieldname));
@@ -15,14 +15,14 @@ var magmi_multifield=function(listfield,dyncontainer,linetpl,vlist)
 
 	this.buildparamlist=function()
 	{
-	  var value=$F(this.listfield)
+	  var value=$F(this.listfield);
 	  var content='';
 	  if(value!="")
 	  {
 	 	var arr=value.split(",");
 	 	for(var i=0;i<arr.length;i++)
 	 	{
-	 	 arr[i]=arr[i].trim();	
+	 	 arr[i]=arr[i].trim();
 	 	}
 	  	var farr=[];
 	 	 arr.each(function(it){
@@ -33,9 +33,9 @@ var magmi_multifield=function(listfield,dyncontainer,linetpl,vlist)
 	  			farr.push({'field':it,'value':v});
 	 	 	 }
 	  	},this);
-	 	 farr.each(function(it){content+=this.getinputline(it.field,it.value,this.linetpl)},this);
+	 	 farr.each(function(it){content+=this.getinputline(it.field,it.value,this.linetpl);},this);
+	 	 $(this.listfield).setValue(arr.join(','));
 	  }
-	  $(this.listfield).setValue(arr.join(','));
 	  $(this.dyncontainer).update(content);
 	};
-}
+};
