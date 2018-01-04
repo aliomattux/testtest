@@ -1,0 +1,228 @@
+---- TRACE : 1 -----
+************************************
+/inc/dbhelper.class.php:53 - PDO->__construct
+----------------------------------------
+Array
+(
+    [0] => mysql:host=localhost;port=3306;dbname=kully_production;charset=utf8
+    [1] => 
+    [2] => 
+    [3] => Array
+        (
+            [1002] => SET NAMES utf8
+        )
+
+)
+
+/inc/magmi_engine.php:439 - DBHelper->initDb
+----------------------------------------
+Array
+(
+    [0] => localhost
+    [1] => kully_production
+    [2] => 
+    [3] => 
+    [4] => 3306
+    [5] => 
+    [6] => net
+    [7] => 
+)
+
+/inc/magmi_engine.php:392 - Magmi_Engine->connectToMagento
+----------------------------------------
+Array
+(
+)
+
+/web/magmi_run.php:45 - Magmi_Engine->run
+----------------------------------------
+Array
+(
+    [0] => Array
+        (
+            [engine] => magmi_productimportengine:Magmi_ProductImportEngine
+            [ts] => 1515109162
+            [run] => import
+            [logfile] => progress.txt
+            [profile] => default
+            [mode] => update
+        )
+
+)
+
++++++++++++++++++++++++++++++
+CONTEXT DUMP
++++++++++++++++++++++++++++++
+Magmi_ProductImportEngine Object
+(
+    [attrinfo] => Array
+        (
+        )
+
+    [attrbytype] => Array
+        (
+        )
+
+    [store_ids] => Array
+        (
+        )
+
+    [status_id] => Array
+        (
+        )
+
+    [attribute_sets] => Array
+        (
+        )
+
+    [prod_etype] => 
+    [default_asid] => 
+    [sidcache] => Array
+        (
+        )
+
+    [mode] => update
+    [_attributehandlers:Magmi_ProductImportEngine:private] => 
+    [_current_row:Magmi_ProductImportEngine:private] => 
+    [_optidcache:Magmi_ProductImportEngine:private] => 
+    [_curitemids:Magmi_ProductImportEngine:private] => Array
+        (
+            [sku] => 
+        )
+
+    [_dstore:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_same:Magmi_ProductImportEngine:private] => 
+    [_currentpid:Magmi_ProductImportEngine:private] => 
+    [_extra_attrs:Magmi_ProductImportEngine:private] => 
+    [_profile:Magmi_ProductImportEngine:private] => 
+    [_sid_wsscope:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_sid_sscope:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_prodcols:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_stockcols:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_skustats:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_item_meta:Magmi_ProductImportEngine:private] => 
+    [_conf:protected] => Magmi_Config Object
+        (
+            [_defaultconfigname:Magmi_Config:private] => 
+            [_basedir:protected] => /home/kully/config/production/magmi/conf
+            [_confname:protected] => /home/kully/config/production/magmi/conf/magmi.ini
+            [_props:protected] => Array
+                (
+                    [DATABASE] => Array
+                        (
+                            [dbname] => kully_production
+                        )
+
+                    [GLOBAL] => Array
+                        (
+                            [step] => 0.5
+                        )
+
+                )
+
+            [inifile] => /home/kully/config/production/magmi/conf/magmi.ini
+            [_specialchars:protected] => Array
+                (
+                    ["] => :DQUOTE:
+                    ['] => :SQUOTE:
+                    [\t] => TAB
+                )
+
+        )
+
+    [_initialized:protected] => 1
+    [_exceptions:protected] => Array
+        (
+            [SQLSTATE[28000] [1045] Access denied for user 'kwaid'@'localhost' (using password: NO)] => Array
+                (
+                    [0] => 1
+                    [1] => 1
+                )
+
+        )
+
+    [tprefix] => 
+    [_connected:protected] => 
+    [_activeplugins:protected] => 
+    [_pluginclasses:protected] => 
+    [_builtinplugins:protected] => Array
+        (
+            [itemprocessors] => /home/kully/config/production/magmi/plugins/inc/magmi_defaultattributehandler.php::Magmi_DefaultAttributeItemProcessor
+        )
+
+    [_ploop_callbacks:protected] => Array
+        (
+        )
+
+    [_excid:Magmi_Engine:private] => 1
+    [logger] => FileLogger Object
+        (
+            [_fname:protected] => /home/kully/config/production/magmi/state/progress.txt
+        )
+
+    [_timingcats:protected] => Array
+        (
+        )
+
+    [_db:protected] => 
+    [_debug:protected] => 
+    [_laststmt:protected] => 
+    [_use_stmt_cache:protected] => 1
+    [_nreq:protected] => 
+    [_indbtime:protected] => 
+    [_intrans:protected] => 
+    [prepared:protected] => Array
+        (
+        )
+
+    [_timecounter:protected] => TimeCounter Object
+        (
+            [_timingcats:protected] => Array
+                (
+                    [db] => Array
+                        (
+                            [_counters] => Array
+                                (
+                                    [requests] => 0
+                                )
+
+                            [_timers] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [_defaultsrc:protected] => Magmi_ProductImportEngine
+            [_timingcontext:protected] => Array
+                (
+                )
+
+        )
+
+    [_tcats:protected] => db
+)
+
++++++++++++++++++++++++++++++
+END CONTEXT DUMP
++++++++++++++++++++++++++++++
+---- ENDTRACE : 1 -----

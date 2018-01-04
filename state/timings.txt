@@ -1,0 +1,43 @@
+
+TIMING CATEGORY:db
+--------------------------------
+Phase:startImport
+- Class:Magmi_ProductImportEngine :0.0001 - Class:Magmi_CSVDataSource :0.0001 
+Phase:processColumnList
+
+Phase:processItemBeforeId
+- Class:Magmi_ProductImportEngine :2.3007 - Class:Magmi_DefaultAttributeItemProcessor :1.1885 
+Phase:processItemAfterId
+- Class:Magmi_ProductImportEngine :2.8128 - Class:Magmi_DefaultAttributeItemProcessor :1.5078 
+Phase:processItemAfterImport
+- Class:Magmi_ProductImportEngine :1.4855 
+Phase:endImport
+
+Phase:afterImport
+- Class:EmailReportPlugin :0.2154 - Class:Magmi_DefaultAttributeItemProcessor :0.0001 
+Phase:indb
+- Class:Magmi_ProductImportEngine :0.0016 - Class:Magmi_ReindexingPlugin :0.0016 
+TIMING CATEGORY:global
+--------------------------------
+Phase:startImport
+- Class:Magmi_ProductImportEngine :0.0001 - Class:Magmi_CSVDataSource :0.0001 
+Phase:processColumnList
+
+Phase:processItemBeforeId
+- Class:Magmi_ProductImportEngine :2.3007 - Class:Magmi_DefaultAttributeItemProcessor :1.1885 
+Phase:processItemAfterId
+- Class:Magmi_ProductImportEngine :2.8128 - Class:Magmi_DefaultAttributeItemProcessor :1.5078 
+Phase:processItemAfterImport
+- Class:Magmi_ProductImportEngine :1.4855 
+Phase:endImport
+
+Phase:afterImport
+- Class:EmailReportPlugin :0.2154 - Class:Magmi_DefaultAttributeItemProcessor :0.0001 
+TIMING CATEGORY:line
+--------------------------------
+Phase:processItemBeforeId
+
+Phase:endImport
+
+Phase:afterImport
+- Class:EmailReportPlugin :0.2154 - Class:Magmi_DefaultAttributeItemProcessor :0.0001 
